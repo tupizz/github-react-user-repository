@@ -15,6 +15,11 @@ export default function Main() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!username) {
+      return;
+    }
+
     history.push(`/users/${username}`);
   };
 
@@ -33,7 +38,7 @@ export default function Main() {
             placeholder="Digite o nome do usuário"
           />
 
-          <SubmitButton>
+          <SubmitButton isTyped={Boolean(username)}>
             <FiSearch color="#FFF" size={16} />
           </SubmitButton>
         </Form>

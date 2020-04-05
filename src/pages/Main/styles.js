@@ -43,7 +43,10 @@ export const Form = styled.form`
 `;
 
 export const SubmitButton = styled.button.attrs({ type: 'submit' })`
-  background-color: ${constants.primaryColor};
+  background-color: ${(props) =>
+    props.isTyped ? constants.primaryColor : constants.lightGrey};
+  cursor: ${(props) => (props.isTyped ? 'pointer' : 'default')};
+
   border: 0;
   padding: 0 15px;
   margin-left: 10px;

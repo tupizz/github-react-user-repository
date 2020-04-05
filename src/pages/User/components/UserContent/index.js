@@ -13,7 +13,7 @@ export default function UserContent({ userData }) {
         height={350}
         viewBox="0 0 150 300"
         backgroundColor="#f3f3f3"
-        foregroundColor="#ecebeb"
+        foregroundColor="#d5ffe5"
       >
         <circle cx="75" cy="66" r="50" />
         <rect x="0" y="134" rx="2" ry="2" width="140" height="10" />

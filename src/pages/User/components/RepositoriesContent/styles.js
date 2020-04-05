@@ -6,6 +6,20 @@ export const RepositoryWrapper = styled.div`
   flex-wrap: wrap;
 `;
 
+export const WrapperLoading = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+  svg {
+    width: 100%;
+  }
+`;
+
 export const RepositoryItem = styled.div`
   width: 45%;
   border: 1px solid #eee;

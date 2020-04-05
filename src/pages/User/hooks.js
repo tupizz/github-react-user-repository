@@ -12,7 +12,7 @@ export function useUserOnPageLoad({ username }) {
     async function getClients() {
       const [responseUserData, responseUserRepositories] = await Promise.all([
         api.get(`/users/${username}`),
-        api.get(`/users/${username}/repos`),
+        api.get(`/users/${username}/repos?per_page=200`),
       ]);
 
       await delay(1000);
@@ -33,11 +33,11 @@ export function useUserOnPageLoad({ username }) {
         }
       );
 
-      userRepositoriesFromResponse.sort((a, b) =>
-        a.startsCount > b.startsCount ? -1 : 1
+      setUserRepositories(
+        userRepositoriesFromResponse.sort((a, b) =>
+          a.startsCount > b.startsCount ? -1 : 1
+        )
       );
-
-      setUserRepositories([].concat(userRepositoriesFromResponse));
 
       const {
         login,

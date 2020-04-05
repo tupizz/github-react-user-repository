@@ -10,6 +10,7 @@ import {
   ItemHeader,
   WrapperLoading,
 } from './styles';
+
 import { CardWrapper } from '../../../../shared/components/shared-styles';
 
 export default function RepositoriesContent({ userRepositories }) {
@@ -22,7 +23,9 @@ export default function RepositoriesContent({ userRepositories }) {
             <RepositoryItem key={repository.id}>
               <ItemHeader>
                 <FiFolder />
-                <span>{repository.name}</span>
+                <a href={repository.url}>
+                  <span>{repository.name}</span>
+                </a>
               </ItemHeader>
 
               <p>{repository.description}</p>

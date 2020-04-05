@@ -21,7 +21,7 @@ export const WrapperLoading = styled.div`
 `;
 
 export const RepositoryItem = styled.div`
-  width: 45%;
+  width: 46%;
   border: 1px solid #eee;
   padding: 5px 10px;
   border-radius: 5px;

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
+import Helmet from 'react-helmet';
 
 import UserContent from './components/UserContent';
 import RepositoriesContent from './components/RepositoriesContent';
@@ -17,7 +18,12 @@ export default function User() {
 
   return (
     <>
+      <Helmet>
+        <title>Resultado de busca: {username}</title>
+      </Helmet>
+
       {error ? <ErrorModal /> : <></>}
+
       <Container error={error}>
         <BackLine>
           <FiArrowLeft />

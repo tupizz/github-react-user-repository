@@ -1,5 +1,12 @@
 import styled from 'styled-components';
-import { constants } from './../../styles/constants';
+import { constants } from '../../styles/constants';
+
+export const PageWrapper = styled.div`
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+`;
 
 export const Container = styled.div`
   max-width: 700px;

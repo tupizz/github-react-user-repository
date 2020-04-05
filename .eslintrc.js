@@ -21,6 +21,7 @@ module.exports = {
     'prettier/prettier': 'error',
     'react/jsx-filename-extension': ['warn', { extensions: ['.jsx', '.js'] }],
     'import/prefer-default-export': 'off',
-    'array-bracket-newline': ['error', { multiline: true, minItems: 2 }],
+    'array-brecket-newline': 'off',
+    camelcase: 'off',
   },
 };

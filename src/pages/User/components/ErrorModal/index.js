@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 
 import {
@@ -13,6 +13,14 @@ import gif from '../../../../assets/errorReaction.gif';
 
 export default function ErrorModal() {
   const history = useHistory();
+
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+
+    return function cleanup() {
+      document.body.style.overflow = 'auto';
+    };
+  }, []);
 
   const handleButtonClick = (e) => {
     e.preventDefault();

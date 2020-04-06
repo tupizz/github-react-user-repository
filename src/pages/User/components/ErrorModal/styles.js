@@ -20,6 +20,11 @@ export const Container = styled.div`
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
+
+  @media only screen and (max-width: 720px) {
+    margin: 100px auto;
+    max-width: 95%;
+  }
 `;
 
 export const Header = styled.h3`

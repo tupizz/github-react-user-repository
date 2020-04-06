@@ -2,9 +2,9 @@
 
 Esse projeto tem como o objetivo sanar os seguintes requisitos:
 
--Eu, como usuário, desejo buscar por um usuário do GitHub;
--Eu, como usuário, desejo ver os detalhes desse usuário que foi buscado (número de seguidores, número de seguidos, imagem do avatar, e-mail e bio);
--Eu, como usuário, desejo ver a listagem dos repositórios desse usuário que foi buscado, ordenados pelo número decrescente de estrelas;
+- Eu, como usuário, desejo buscar por um usuário do GitHub;
+- Eu, como usuário, desejo ver os detalhes desse usuário que foi buscado (número de seguidores, número de seguidos, imagem do avatar, e-mail e bio);
+- Eu, como usuário, desejo ver a listagem dos repositórios desse usuário que foi buscado, ordenados pelo número decrescente de estrelas;
 
 ## Detalhes técnicos
 

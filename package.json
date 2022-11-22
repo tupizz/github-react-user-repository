@@ -15,7 +15,7 @@
     "react-icons": "^3.9.0",
     "react-placeholder": "^4.0.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "spectre.css": "^0.5.8",
     "styled-components": "^5.0.1",
     "webfontloader": "^1.6.28"
